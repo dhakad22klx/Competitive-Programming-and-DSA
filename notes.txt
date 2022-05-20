@@ -1,0 +1,25 @@
+//Something We Need To Study 
+ Two pointer algorithm 
+
+
+
+
+
+
+
+
+// Points to be keep in mind
+
+
+
+
+
+
+
+
+
+
+
+
+
+//General theory 
