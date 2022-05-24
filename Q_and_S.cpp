@@ -112,3 +112,23 @@ string Solution::solve(string A) {
 
 }
 
+
+
+
+
+<Question> You are given an integer N and the task is to reverse the digits of the given integer. Return 0 if the result overflows and 
+ does not fit in a 32 bit signed integer.
+ 
+"Solution" : 
+int Solution::reverse(int A) {
+    long int sol = 0;
+    
+    while(A != 0){
+        sol = sol*10 + (A%10);    
+        A = A/10;
+    }
+    if(sol > INT_MAX || sol < INT_MIN){
+        return 0;
+    }
+    return sol;
+}
