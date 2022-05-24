@@ -132,3 +132,16 @@ int Solution::reverse(int A) {
     }
     return sol;
 }
+"Solution2" :
+int Solution::reverse(int A) {
+    string s1=to_string(abs(A));
+    int p=s1.length();
+    string s2;
+    for(int i=p-1;i>=0;i--){
+        s2[p-i-1] = s1[i];
+    }
+    long long  k = stoll(s2);
+    if(A>0 && k<=INT_MAX ) return k;
+    if(A<0 && k<=INT_MAX) return -k; // or -k>=INT_MIN
+    return 0;
+}
