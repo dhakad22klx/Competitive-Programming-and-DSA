@@ -15,6 +15,8 @@ The algorithm used by sort() is IntroSort. Introsort being a hybrid sorting algo
 2.use stoll instead of stoi if we get out of range error.
 also Adding number to INT_MAX gives overflow error and vice versa 
 
+3. for binary search think ans analize  for condition inside while loop perfecly 
+
 
 
 
