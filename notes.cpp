@@ -28,3 +28,7 @@ also Adding number to INT_MAX gives overflow error and vice versa
 
 
 //General theory 
+int v1 = * max_element(X.begin(), X.end()); // Returns value of max element in vector
+int i1 = min_element(X.begin(), X.end())– X.begin(); // Returns index of min element in vector
+int v2 = * max_element(data, data + 5); // Returns value of max element in array
+int i3 = min_element(data, data + 5)– data; // Returns index of min element in array
