@@ -16,7 +16,24 @@ The algorithm used by sort() is IntroSort. Introsort being a hybrid sorting algo
 also Adding number to INT_MAX gives overflow error and vice versa 
 
 3. for binary search think ans analize  for condition inside while loop perfecly 
+string s1 = s.substr(s.begin(),s.begin()+2)  // wrong 
+string s1 = s.substr(0,2)  //correct 
 
+    // Deletes all characters
+    str.erase();
+
+    // Deletes all characters except first one
+    str.erase(1);
+
+    // Deletes 4 characters from index number 1
+    str.erase(1, 4);
+    
+    // Deletes character at position 4
+    str.erase(str.begin() + 4);
+
+    // Deletes all characters between 0th index and
+    // str.end() - 6
+    str.erase(str.begin() + 0, str.end() - 6);    
 
 
 

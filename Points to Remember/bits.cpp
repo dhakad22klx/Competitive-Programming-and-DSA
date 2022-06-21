@@ -1,4 +1,5 @@
 //Brian Kernighan’s Algorithm: 
+
 Subtracting 1 from a decimal number flips all the bits after the rightmost set bit(which is 1) including the rightmost set bit. 
 for example : 
 10 in binary is 00001010 
@@ -21,3 +22,4 @@ else power of 2
 The & and | operators have lower precedence than comparison operators. That means that x & 3 == 1 is interpreted as x & (3 == 1), which is probably not what you want.
 
 If you want to write completely portable C/C++ code, be sure to use unsigned types, particularly if you plan to use the top-most bit
+
