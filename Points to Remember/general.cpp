@@ -39,3 +39,5 @@ for upper case letter use s[i]-'A';
 6.find function : 1)in case of stl container map,set,stack  -syntax : auto it = set_name.find(element) // returns an iterator 
                   2) in case of array- vector auto it = std::find (v.begin(), v.end(), x);// return iterator 
                                               int it =   std:: find(a,a+n,x) // return index of arary
+                                              
+7. next_permutation(all(v)) ,prev_permutation(all(v)) // true : if the function could rearrange  the object as a lexicographically greater permutation and vice versa.
