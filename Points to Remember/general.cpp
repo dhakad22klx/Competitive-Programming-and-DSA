@@ -41,3 +41,7 @@ for upper case letter use s[i]-'A';
                                               int it =   std:: find(a,a+n,x) // return index of arary
                                               
 7. next_permutation(all(v)) ,prev_permutation(all(v)) // true : if the function could rearrange  the object as a lexicographically greater permutation and vice versa.
+
+8. is_sorted(all(v)) return true if sorted else return false;
+
+9.
