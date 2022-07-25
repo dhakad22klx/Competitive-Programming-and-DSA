@@ -1,0 +1,68 @@
+Github Token 
+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
+
+
+#Configuration commands
+git config --global user.name "username"
+git config --global user.email "useremail"
+git config --list // to see config
+gedit .gitconfig // to edit configuration 
+
+
+##Error 
+-->git error: failed to push some refs to remote
+Run the following commands
+    git pull --rebase origin master 
+    git push origin master 
+    
+    
+    
+    
+    
+    
+   
+ ---------//git commands//----------
+ 
+git clone <repository url> // to clone corresponding repository 
+touch <filename_with_extension> // to make corresponding blank file under particular directory 
+git status // to know status 
+git add <filename.extension> // to add file to git 
+git commit -m "add comments" <filename.extension> // to commit file to git 
+git push -u origin master // to push files to github 
+
+
+git add -A // to add all the files in staging area
+
+git checkout <filename.extension> // to match the recent modified  file to previous commit file 
+
+git checkout -f // to match all the recent modified files to previous commit files 
+ 
+git log  // displays all of the commits in a repository's history 
+
+git log -p -2 // will show previous 2 commit and corresponding changes 
+
+git diff         // compares working directory to staging area
+
+git diff --stage  // compares staging area to last commit 
+
+git rm --cached  <filename.extension> // removes the file from commit but still remains on hardisk(untracked)
+
+git rm <filename.extension> // deletes the files so removed from commit too 
+
+git status -s      //
+
+git branch  <branchname> // to create new branch 
+
+git checkout <branchname>   // to switch respective branch 
+
+git merge <branchname>   // to merge respective branch to master branch 
+
+git checkout -b <branchname>    // new branch has formed and switch 
+
+git branch -d <branchname>  // to delete branch from master if it has been already merged 
+
+git push -d <branchname>  // to delete branch from remote ie github 
+
+git remote set-url <remote_name> <remote_url> // to change the origin url
+
+
