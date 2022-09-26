@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------/////////-------
+Combnatorial Game Theroy :
+Youtube : https://www.youtube.com/playlist?list=PLMCXHnjXnTnuolrTKzZkTMGmQNEP3NaBa
+Blog : http://letuskode.blogspot.com/2014/08/grundy-numbers.html
+Blog : http://www.numericana.com/answer/games.htm
+Topcoder Article : https://www.topcoder.com/thrive/articles/Algorithm%20Games
+
+
+------//////----------
+

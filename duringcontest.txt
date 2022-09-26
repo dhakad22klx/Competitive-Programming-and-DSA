@@ -1,0 +1,15 @@
+/* TIPS:
+1. If WA comes and you are sure about the solution, then check the constraints.
+   define int long long int in these cases. Also check whether you put == in if statment and not =
+2. If too many people have solved a question you are stuck on, then always remember: The solution is
+   100% easy and you need to calm down and think EASY, nothing complicated.
+3. Read the question again after getting two wrong submissions. You are 100% missing something important
+   in the question.
+4. If TLE comes in question, then check if one of the test cases generate infinite output.
+   It will give TLE.
+5. For graph questions, always condense questions in smaller subparts like for n*m rectangle take 1*2
+   small parts. They will cling together to give final optimal answer.
+6. If question looks unsolvable from front, try going from back. Works mostly from the back.
+7. Stuck on implmentation? Think and then implement Data Structures that best fit the q like stacks,queue.
+*/
+---Problem 1717 C - it is alwways solvable to B and C ,dont give up by initial time fear.Try take time dont care about positive negative rating changes 

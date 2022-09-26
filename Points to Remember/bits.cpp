@@ -41,6 +41,14 @@ If x is of long type,we can use __builtin_clzl(x) If x is of long long type,we c
   Ex- long x=16;       // 00000000 00000000 00000000 00010000 (32 bits)
       cout<<__builtin_clzl(x)<<endl;   //returns 27.
       
-8. 
+8. 1 ) Printing the binary representation of any Number.
+void pr_binary(int num){
+    for(int i=10;i>=0;i--) cout<<((num>>i)&1);
+    cout<<endl;
+}
+9. //Update :You can also represent any number in its binary form as;
+cout<<bitset<const_length>(number); ex- cout<<bitset<10>(128) 0010000000
+
+10.
       
 

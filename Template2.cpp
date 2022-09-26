@@ -31,8 +31,8 @@ typedef vector<ll> vl;
 typedef pair<ll, ll> pll;
 typedef vector<pair<ll,ll>> vpl;
 typedef vector<vector<ll>> matrix;// x(n,vector<ll> (m,0) )//n*m
-typedef map<ll,ll>   mll;
-typedef tree<int,null_type,less<int>,
+typedef map<ll,ll>   mll;       
+    typedef tree<int,null_type,less<int>,
 rb_tree_tag,tree_order_statistics_node_update> ordered_set;
 
 #define maxheap(DT)       priority_queue< DT,vector<DT> > 
@@ -79,10 +79,34 @@ bool CheckBit (int n, int X) { return (bool)(n & (1 << X));}
 
 bool isprime(ll x){ if(x<=1) return false; for(ll i=2 ; i*i<=x;  i++){if(x%i==0)return false;}return true;}
 ll  power(int a , int b){if(!b) return 1;ll ret=power(a,b/2);return (b & 1 ? ret*ret*a: ret*ret);}
-ll n,k,a,b,c,x,y,q;str s,s1,s2;
+ll binary(ll a, vector<ll>&v){
+    ll l=0, r=v.size()-1;
+    while(r-l>1){
+        ll mid=(l+r)/2;
+        if (a>v[mid]){
+            l=mid+1;
+        }
+        else r=mid;
+    }
+    if (v[r]==a) return r;
+    if(v[l]==a) return l;
+    else return -1;
+}
+bool ispalindrome(string s){
+    string s1=s;
+    reverse(all(s));
+    if(s1==s) return true;
+    else return false;
+}
+ll n,k,a,b,c,x,y,l,r,ans,mx,mn;str s,s1,s2;
+bool f,g;
+char d,e;
+map<ll,ll> m,m1,m2;
 //----------------------
 //Let's Go :)
 void solve(){
+    cin>>n>>s;
+    
     return;
 }
 int main(){

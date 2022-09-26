@@ -33,7 +33,10 @@ string s1 = s.substr(0,2)  //correct
 
     // Deletes all characters between 0th index and
     // str.end() - 6
-    str.erase(str.begin() + 0, str.end() - 6);    
+    str.erase(str.begin() + 0, str.end() - 6); 
+4. set<int, greater<int>> - now lower_bound will give immediate '<=' value ,insted   >= , also changes for upper_bound ,basilly allocation order is reversed .
+
+5.  
 
 
 
