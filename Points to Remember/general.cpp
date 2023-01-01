@@ -44,4 +44,21 @@ for upper case letter use s[i]-'A';
 
 8. is_sorted(all(v)) return true if sorted else return false;
 
-9.
+9. in case of memory limits -consider contraints sharply
+
+10. for map , use "(m.find(key) !=m.end())" instead of "m[key]!=0" becuase m[key] initializes key to value=0; memory limit exit with incrase in map size;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

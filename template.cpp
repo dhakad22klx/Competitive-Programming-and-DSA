@@ -80,8 +80,51 @@ int ClearBit (int n, int X) { return n & ~(1 << X); }
 int ToggleBit (int n, int X) { return n ^ (1 << X); }
 bool CheckBit (int n, int X) { return (bool)(n & (1 << X)); }
 
+//modulo exponential
+ll moduloexp(ll base,ll exp){
+    ll result =1;
+    while(exp>0){
+        if(exp&1){
+            result= (result*base)%M;
+        }
+        base=(base*base)%M;
+        exp>>=1;
+    }
+    return result;
+}
+vector<ll> fac,ifac;//fac-factorial,ifac-modulo inv of fac
+void precompute(ll n) {
+    fac.resize(n + 1);
+    fac[0] = fac[1] = 1;
+    for (ll i = 2; i <= n; i++) {
+        fac[i] = (i * fac[i-1] % M);
+    }
 
-ll  n,k,a, b,c,x,y; str s,t;
+    ifac.resize(n + 1);
+    for (ll i = 0; i < fac.size(); i++) {
+        ifac[i] = moduloexp(fac[i], M - 2);
+    }
+    return;
+}
+//nCr
+ll nCr(ll n, ll r) {
+    if ((n < 0) || (r < 0) || (r > n)) {
+        return 0;
+    }
+    return (fac[n] * ifac[r] % M * ifac[n - r] % M);
+}
+
+///8 d -->movement in a grid 
+vector<pair<ll,ll>> movements={
+    {1,1},{-1,1},{-1,-1},{1,-1},
+    {1,0},{0,1},{-1,0},{0,-1},
+};
+
+
+ll n,k,a,b,c,q,x,y,l,r,ans,ans1,ans2,mx,mn,sum;
+str s,s1,s2;
+bool f,g;
+char d,e;
 //---------------------------------------------------------------------------------------------------------------------------------
 //Let's Go :)
 void solve(){

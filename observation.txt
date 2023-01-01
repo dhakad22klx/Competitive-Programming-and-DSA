@@ -1,0 +1,2 @@
+Key observation: x mod y <= x/2 if x≥y, and x mod y = x  if x<y ,reason --> x%y <y and x%y<=x-y;
+

@@ -32,7 +32,7 @@ typedef pair<ll, ll> pll;
 typedef vector<pair<ll,ll>> vpl;
 typedef vector<vector<ll>> matrix;// x(n,vector<ll> (m,0) )//n*m
 typedef map<ll,ll>   mll;       
-    typedef tree<int,null_type,less<int>,
+typedef tree<int,null_type,less<int>,
 rb_tree_tag,tree_order_statistics_node_update> ordered_set;
 
 #define maxheap(DT)       priority_queue< DT,vector<DT> > 
@@ -77,7 +77,7 @@ int ClearBit (int n, int X) { return n & ~(1 << X); }
 int ToggleBit (int n, int X) { return n ^ (1 << X); }
 bool CheckBit (int n, int X) { return (bool)(n & (1 << X));}
 
-bool isprime(ll x){ if(x<=1) return false; for(ll i=2 ; i*i<=x;  i++){if(x%i==0)return false;}return true;}
+bool isPrime(ll x){ if(x<=1) return false; for(ll i=2 ; i*i<=x;  i++){if(x%i==0)return false;}return true;}
 ll  power(int a , int b){if(!b) return 1;ll ret=power(a,b/2);return (b & 1 ? ret*ret*a: ret*ret);}
 ll binary(ll a, vector<ll>&v){
     ll l=0, r=v.size()-1;
@@ -98,10 +98,78 @@ bool ispalindrome(string s){
     if(s1==s) return true;
     else return false;
 }
-ll n,k,a,b,c,x,y,l,r,ans,mx,mn;str s,s1,s2;
+
+//modulo exponential
+ll moduloexp(ll base,ll exp){
+    ll result =1;
+    while(exp>0){
+        if(exp&1){
+            result= (result*base)%M;
+        }
+        base=(base*base)%M;
+        exp>>=1;
+    }
+    return result;
+}
+vector<ll> fac,ifac;//fac-factorial,ifac-modulo inv of fac
+void precompute(ll n) {
+    fac.resize(n + 1);
+    fac[0] = fac[1] = 1;
+    for (ll i = 2; i <= n; i++) {
+        fac[i] = (i * fac[i-1] % M);
+    }
+
+    ifac.resize(n + 1);
+    for (ll i = 0; i < fac.size(); i++) {
+        ifac[i] = moduloexp(fac[i], M - 2);
+    }
+    return;
+}
+//nCr
+ll nCr(ll n, ll r) {
+    if ((n < 0) || (r < 0) || (r > n)) {
+        return 0;
+    }
+    return (fac[n] * ifac[r] % M * ifac[n - r] % M);
+}
+//sieve of eratosthenes
+vector<bool> isprime;
+void sieveOfEratosthenes(ll n)
+{
+    isprime.resize(n+1,true);
+    isprime[0]=false;
+    isprime[1]=false;
+    for(ll i=2;i<=n;i++)
+    {
+        if(!isprime[i]) continue;
+        for(ll j=2*i; j<=n; j+=i){
+            isprime[j]=false;
+        }
+    }
+}
+ll add(ll a,ll b)
+{
+    return (a%M + b%M)%M;
+}
+ll multi(ll a,ll b)
+{
+    return ((a%M) *(b%M))%M;
+}
+ll divide(ll a,ll b)
+{
+    return ((a%M)*(moduloexp(b,M-2)%M))%M;
+}
+
+///8 d -->movement in a grid 
+vector<pair<ll,ll>> movements={
+    {1,1},{-1,1},{-1,-1},{1,-1},
+    {1,0},{0,1},{-1,0},{0,-1},
+};
+
+ll n,k,a,b,c,q,x,y,l,r,ans,ans1,ans2,mx,mn,sum;
+str s,s1,s2;
 bool f,g;
 char d,e;
-map<ll,ll> m,m1,m2;
 //----------------------
 //Let's Go :)
 void solve(){
