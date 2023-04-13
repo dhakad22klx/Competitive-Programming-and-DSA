@@ -1,5 +1,5 @@
 Github Token 
-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
+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
 
 
 #Configuration commands

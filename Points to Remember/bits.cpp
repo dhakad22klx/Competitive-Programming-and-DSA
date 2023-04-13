@@ -49,6 +49,12 @@ void pr_binary(int num){
 9. //Update :You can also represent any number in its binary form as;
 cout<<bitset<const_length>(number); ex- cout<<bitset<10>(128) 0010000000
 
-10.
+10. It is stated that the number of subsequences in which the i-th bit enters an odd number of times is equal to 2^(n-1). 
+
+11. It is easy to prove if (a^b gives  minimum xor ) then no 'c' exits such that a<c<b in the subarray.Basically minimum xor among all pairs in array occurs on consecutive elements. So sort tha array and take mimimum among all consecutive pairs.
+
+12.  (a & b ) ^ ( a | b )  is same as a^b.
+
+13. It is stated that the number of subsequences in which the i-th bit enters an odd number of times is equal to (1<<(n-1))....n is array size. CF : 1614-C
       
 

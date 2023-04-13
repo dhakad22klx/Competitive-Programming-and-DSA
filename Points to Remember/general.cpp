@@ -47,9 +47,11 @@ for upper case letter use s[i]-'A';
 9. in case of memory limits -consider contraints sharply
 
 10. for map , use "(m.find(key) !=m.end())" instead of "m[key]!=0" becuase m[key] initializes key to value=0; memory limit exit with incrase in map size;
+11. When ever we compare some differce = k*x; //remember x should be non zero 382 C
 
-
-
+12. Iterating set gives TLE is more slow than vector ..codeforces 986 A.
+13. When calling comparator function in leetcode use static bool ,
+ comment from someone -" make the "Compare" function as static, as sort() function takes static function pointer as an argument ".
 
 
 

@@ -12,4 +12,12 @@
 6. If question looks unsolvable from front, try going from back. Works mostly from the back.
 7. Stuck on implmentation? Think and then implement Data Structures that best fit the q like stacks,queue.
 */
----Problem 1717 C - it is alwways solvable to B and C ,dont give up by initial time fear.Try take time dont care about positive negative rating changes 
+---Problem 1717 C - it is always solvable to B and C ,dont give up by initial time fear.Try take time dont care about positive negative rating changes
+8. If something bound is given like maximum 10 different character.Bitmastking should strike for some time.
+9. if binary string is talking about or something 1-0 then bit manipulation should strike to the mind for sometime.
+10. For patter/constructive questions don't go for arbitrary cases.Try to generalize expression or the problem.
+11. If question asks for No. of desird then we should think of (total - no. of undesired).
+12. It is always good practice to rearrage expressions in case of mathmatical questions.
+13. When problem ask for something all x , such l<=x<=r . We should think of compute for(r) - compute for (l-1).
+14. See the constraits helps to either go fo dp /recursion or simple constructive/binary search.
+15. Always run/try obvious cases if not given in test case before submitting. //900 C wrong on 51.

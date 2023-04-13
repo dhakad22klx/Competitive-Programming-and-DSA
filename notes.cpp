@@ -37,16 +37,6 @@ string s1 = s.substr(0,2)  //correct
 4. set<int, greater<int>> - now lower_bound will give immediate '<=' value ,insted   >= , also changes for upper_bound ,basilly allocation order is reversed .
 
 5.  
-
-
-
-
-
-
-
-
-
-
 //General theory 
 int v1 = * max_element(X.begin(), X.end()); // Returns value of max element in vector
 int i1 = min_element(X.begin(), X.end())– X.begin(); // Returns index of min element in vector
