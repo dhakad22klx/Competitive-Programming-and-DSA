@@ -19,17 +19,17 @@ vector<ll> level[N];
 void dfs(ll node, ll parent, vector<ll> &vis, vector<ll> &tin, vector<ll> &low, ll &timer, vector<ll> graph[]) {
     vis[node] = 1; 
     tin[node] = low[node] = timer++; 
-    for(auto it: graph[node]) {
-        if(it == parent) continue;
+    for(auto child: graph[node]) {
+        if(child == parent) continue;
         
-        if(!vis[it]) {
-            dfs(it, node, vis, tin, low, timer, graph); 
+        if(!vis[child]) {
+            dfs(child, node, vis, tin, low, timer, graph); 
             low[node] = min(low[node], low[it]); 
-            if(low[it] > tin[node]) {
-                cout << node << " " << it << endl;//bridges node -it
+            if(low[child] > tin[node]) {
+                cout << node << " " << child << endl;//bridges node -it
             }
         } else {
-            low[node] = min(low[node], tin[it]); 
+            low[node] = min(low[node], tin[child]); 
         }
     }
 }

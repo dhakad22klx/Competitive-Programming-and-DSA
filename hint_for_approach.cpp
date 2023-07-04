@@ -4,3 +4,8 @@
 4. When problem ask for something all x , such l<=x<=r . We should think of compute for(r) - compute for (l-1).
 5. Always see constrinst whether it is possbile to use dynamic programming or not.
 6. When dealing with abs(x1-x2) for all pairs.we should think of sorting a time.
+7. When dealing in grid and something about distance is point of interest then BFS is one way to think.
+8. Incase of subset xor max min and all. We should first think of what maximum value can be then check that using dp and bitmask etc 
+   example for ref : 1). //https://www.codechef.com/problems/XORSUB?tab=statement 
+   (it's basic version : https://practice.geeksforgeeks.org/problems/subsets-with-xor-value2023/0 )s
+   2). https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/practice-problems/algorithm/compatibility-queries-0c068f8f/

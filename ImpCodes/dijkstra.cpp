@@ -1,6 +1,6 @@
 //1.normal ide dijkstra implementation ,
 //2.leetcode ide dijkstra implementation,
-//3.Printing shortest distance path from soruce to destinaton//single source
+//3.Printing shortest distance path from soruce to destinaton //single source
 //
 //
 

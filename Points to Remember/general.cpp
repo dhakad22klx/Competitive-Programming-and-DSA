@@ -52,6 +52,34 @@ for upper case letter use s[i]-'A';
 12. Iterating set gives TLE is more slow than vector ..codeforces 986 A.
 13. When calling comparator function in leetcode use static bool ,
  comment from someone -" make the "Compare" function as static, as sort() function takes static function pointer as an argument ".
+14. we can use  bound on set<pair<ll,ll>> with respect to first element.Example below : 
+    set<pair<ll,ll>> s; s.insert({5,6}); s.insert({5,5}); s.insert({5,4}); s.insert({5,3}); s.insert({5,2});
+    auto it=s.lower_bound({5,0});cout<<(*it).second;
+    //it will output '2'.
+15. Comparator function 
+    set : https://stackoverflow.com/questions/2620862/using-custom-stdset-comparator 
+    or https://www.geeksforgeeks.org/how-to-declare-comparator-for-set-of-pair-in-cpp/
+    call - "cmp"
+    example :
+    bool cmp(int a, int b) {
+    return ...;
+    }
+    set<int, decltype(&cmp)> s(&cmp);
+    
+    Priority Queue< : https://www.geeksforgeeks.org/custom-comparator-in-priority_queue-in-cpp-stl/
+    
+    call - "Compare"
+
+    class Compare {
+    public:
+    bool operator()(DT a,DT b)
+    {
+         return .....;
+    }
+};
+16. When dealing at border cases 2D vector with long long might give errors,use int in that case.//CSES Dynamic Programming coin combinations II 
+17. Some time integer overflow may give wrong ans.//https://codeforces.com/contest/614/problem/A
+18. When deadling with large range 1e9 and points are limited 1e5 ,then we should compress range to coordinates.
 
 
 

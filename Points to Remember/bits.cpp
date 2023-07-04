@@ -56,5 +56,8 @@ cout<<bitset<const_length>(number); ex- cout<<bitset<10>(128) 0010000000
 12.  (a & b ) ^ ( a | b )  is same as a^b.
 
 13. It is stated that the number of subsequences in which the i-th bit enters an odd number of times is equal to (1<<(n-1))....n is array size. CF : 1614-C
+
+14.'x|y - y' is same as 'x-(x&y)'. (x+y-(x&y)) is same as (x|y).
+ 
       
 

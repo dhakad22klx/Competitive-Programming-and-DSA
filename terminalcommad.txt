@@ -1,0 +1,6 @@
+pwd : current working directory
+cd  : change directory
+gedit : to edit file
+alias : to make shortcut commands
+unalias : to remove alias
+
