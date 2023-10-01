@@ -1,5 +1,5 @@
 Github Token 
-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
+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
 
 
 #Configuration commands
