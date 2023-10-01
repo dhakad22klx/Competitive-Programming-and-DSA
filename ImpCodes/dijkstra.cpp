@@ -1,8 +1,8 @@
-//1.normal ide dijkstra implementation ,
+//1.normal ide dijkstra implementation ,//there is another algorithm for adjacency matrix you can find on google.
 //2.leetcode ide dijkstra implementation,
 //3.Printing shortest distance path from soruce to destinaton //single source
 //
-//
+//problem : 2D dijkstra https://codeforces.com/contest/721/problem/C
 
 1.
 
@@ -26,6 +26,8 @@ vector<ll> dist(N,INF);
 void dijkstra(ll source)
 {
     set<pair<ll,ll>> st;
+    //we can also use priority queue it will be more efficient with respect to time relative to set
+    //priority_queue< pair<ll,ll>,vector<pair<ll,ll>>,greater<pair<ll,ll>> > 
 
     st.insert({0,source});
 
@@ -43,7 +45,7 @@ void dijkstra(ll source)
 
         if(vis[v]) continue;
 
-        vis[v]=true;
+        vis[v]=true;//this is not required though but time efficient if used.so we can eliminate vis array from code and rest same.
 
         for(auto child : graph[v])
         {

@@ -1,0 +1,16 @@
+//Tree 
+1.tree + dp , diameter of tree, rerooting, lca, binary lifting.
+
+
+//STL 
+stack , queue;
+
+
+//Graph
+ Graph, graph +dp, 
+ 
+ 
+ 
+ //Number Theory 
+ 
+ Seive trick , Fermat Theoram ,Euler totient 

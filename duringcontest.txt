@@ -27,3 +27,8 @@
 19. If brute force seem to work then please try to optimise.It may get stuck while coding.
 20. If something talked about from back, we can think of opposite.Reverses and start from front.
 21. if you are going to minimize something make habit of take min = INF first.
+22. If we are using lca , depth should be in mind.
+23. Even if you got how to solve think of optimization or clean implementation before writing peculiar stuffs. //1858 B codeforces
+24. Think of reverese way to solve   : https://leetcode.com/problems/burst-balloons/description/
+24. Think of reversing the process : https://codeforces.com/contest/1672/problem/D
+25. Every time thinking of breaking problems into subproblem always think does answer exist in subproblem.

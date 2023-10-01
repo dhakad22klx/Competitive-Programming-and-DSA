@@ -58,6 +58,21 @@ cout<<bitset<const_length>(number); ex- cout<<bitset<10>(128) 0010000000
 13. It is stated that the number of subsequences in which the i-th bit enters an odd number of times is equal to (1<<(n-1))....n is array size. CF : 1614-C
 
 14.'x|y - y' is same as 'x-(x&y)'. (x+y-(x&y)) is same as (x|y).
+
+15. sum of no. of set bits of numbers from 1 to N
+   int countSetBits(int n)
+   {   
+       if((n&(n-1)) == 0){
+               //if n is power of 2 directly return result
+           return 1+ log2(n)*(n/2);
+       }else{
+           // y is 2th power  before n
+           int y = pow(2,(int)log2(n));
+           return (n-y) + countSetBits(y)+ countSetBits(n-y);
+       }
+   }
+16. 
+
  
       
 

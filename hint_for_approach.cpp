@@ -9,3 +9,5 @@
    example for ref : 1). //https://www.codechef.com/problems/XORSUB?tab=statement 
    (it's basic version : https://practice.geeksforgeeks.org/problems/subsets-with-xor-value2023/0 )s
    2). https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/practice-problems/algorithm/compatibility-queries-0c068f8f/
+   
+9. When something is about min operation to change x from a to b or min distance .BFS should strike. //1633 D codeforces

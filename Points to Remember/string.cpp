@@ -13,3 +13,5 @@ s1 = s.substr(0, 3), // “hel”
 s2 = s.substr(1, 3), // “ell”
 s3 = s.substr(0, s.length() - 1), “hell”
 s4 = s.substr(1); // “ello”
+
+4. char c; isdigit(c);//return true if c is numerical digit character and false otherwise;

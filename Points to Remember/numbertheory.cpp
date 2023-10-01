@@ -1,6 +1,6 @@
 //modulo exponential
 
-ll moduloexp(ll a,ll b){
+1. ll moduloexp(ll a,ll b){
     ll result =1;
     while(b>0){
         if(b&1){
@@ -19,4 +19,4 @@ ll gcd(ll a,ll b){
     gdc(b,a%b);
 }
 
-
+2. There is a fact that the distance between adjacent prime numbers isn't big. For n = 1e9 maximal distanse is 282.

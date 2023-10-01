@@ -1,9 +1,13 @@
 Question : 1. https://cses.fi/problemset/task/1646
-2.https://codeforces.com/problemset/problem/102/D
+           2. https://codeforces.com/problemset/problem/102/D
+           
+//Cp algorithm for tutorials 
 A fenwick tree can support 
 1. Point Update and Range Query
-2. Range Update and Point Query
-3. Range Update and Range Query
+2. Range Update and Point Query //using difference array 
+3. Range Update and Range Query 
+
+//Binary lifting code also attached below 
 
 
 #include<bits/stdc++.h>
@@ -111,3 +115,28 @@ int main(){
     return 0;
 }
 /*__builtin_popcountll(x) , */
+
+
+
+//Binary Lifting pseudo code : https://codeforces.com/blog/entry/61364
+// This is equivalent to calculating lower_bound on prefix sums array
+// LOGN = log(N)
+
+int bit[N]; // BIT array
+
+int bit_search(int v)
+{
+	int sum = 0;
+	int pos = 0;
+	
+	for(int i=LOGN; i>=0; i--)
+	{
+		if(pos + (1 << i) < N and sum + bit[pos + (1 << i)] < v)
+		{
+			sum += bit[pos + (1 << i)];
+			pos += (1 << i);
+		}
+	}
+
+	return pos + 1; // +1 because 'pos' will have position of largest value less than 'v'
+}

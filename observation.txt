@@ -1,5 +1,6 @@
 Key observation: 
 1. x mod y <= x/2 if x≥y, and x mod y = x  if x<y ,reason --> x%y <y and x%y<=x-y;
 2. sum of first 2*n natural numbers is divisible by n so,if find remainder of sum of first k natural number(k may be big ) then remainder will repeat in cycle of 2*n so we need to know only first 2*n remainders.
+3. x=(a+b -(a^b);y=(a+b+c-(a^b^c)); then (y>=x) because we are increase it by 'c' and xor may increase max by 'c'.
 
 

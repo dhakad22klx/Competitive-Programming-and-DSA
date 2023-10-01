@@ -80,10 +80,16 @@ for upper case letter use s[i]-'A';
 16. When dealing at border cases 2D vector with long long might give errors,use int in that case.//CSES Dynamic Programming coin combinations II 
 17. Some time integer overflow may give wrong ans.//https://codeforces.com/contest/614/problem/A
 18. When deadling with large range 1e9 and points are limited 1e5 ,then we should compress range to coordinates.
+19. lower bound in vector<pair<ll,ll>> v :-
+    ll idx = lower_bound(all(v),{a,b}) - v.begin() ;//will throw error 
+    pair<ll,ll> p ={a,b};
+    ll idx = lower_bound(all(v),p) - v.begin() ; // will run fine 
+20. If vector of length n , we need subsequence such that sum of element is divisible by m.Then for n>m answer is always true.
+    (if we take prefix sum % m then maximum m distinct element can be there.So,atleast (n-m) repeated.That is somewhere sum % m == 0.
+    
+21.  Then parity of inversion count of the resulting permutation will change if you applied odd number of swaps.
 
-
-
-
+22. There is a fact that the distance between adjacent prime numbers isn't big. For n = 1e9 maximal distanse is 282.
 
 
 

@@ -2,7 +2,19 @@
 2. On dfs        : Codeforces https://codeforces.com/contest/1694/problem/D                                                                : Pendings
 3. On rearragement : https://practice.geeksforgeeks.org/problems/rearrange-an-array-with-o1-extra-space3142/1
 4. Something standard : https://codeforces.com/problemset/problem/255/C                                            (longest arithmatic subsequence ) 
-5.
-6.
-7.
-8.
+5. Graph + DP         : https://codeforces.com/contest/1573/problem/C  
+6. Good LCA problems  : https://codeforces.com/contest/832/problem/D
+7. Somewhat good binary search : https://codeforces.com/problemset/problem/1680/C
+8. Different type of dp in which you are just checking by cnt : https://www.hackerearth.com/practice/algorithms/searching/linear-search/practice-problems/algorithm/equal-strings-79789662-4dbd707c/
+9.  DP with observation : https://codeforces.com/contest/1221/problem/D
+10. 2D Dijkstra : https://codeforces.com/contest/721/problem/C
+11. Re-rooting Pending : https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/practice-problems/algorithm/prime-path-3-7426cdf8/
+12. Dearrangement : https://codeforces.com/contest/888/problem/D
+13. Simple if we solve for 2 skip, for more then that we have to use dp (memory limit is there so recursion won't work.
+    Problem : https://codeforces.com/contest/1132/problem/C
+    //errichto referral : https://www.youtube.com/watch?v=4GNUt5unEnM&t=1s
+    
+14. errichto bitset video on youtube 
+
+15. Rerooting + dp //distance in tree codeforces and
+  // hackerearth problem : https://www.hackerearth.com/challenges/competitive/september-circuits-23/algorithm/min-mystic-3c780194/
