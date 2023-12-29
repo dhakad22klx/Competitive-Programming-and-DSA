@@ -1,7 +1,7 @@
 Best	O(n2)
 Worst	O(n2)
 Average	O(n2)
-Space Complexity	O(1) //In place algorithm
+Space Complexity O(1) //In place algorithm
 Stability	No
 
 //Selection sort is a sorting algorithm that selects 

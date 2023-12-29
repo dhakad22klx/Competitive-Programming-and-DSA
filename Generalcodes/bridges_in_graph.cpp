@@ -24,7 +24,7 @@ void dfs(ll node, ll parent, vector<ll> &vis, vector<ll> &tin, vector<ll> &low, 
         
         if(!vis[child]) {
             dfs(child, node, vis, tin, low, timer, graph); 
-            low[node] = min(low[node], low[it]); 
+            low[node] = min(low[node], low[child]); 
             if(low[child] > tin[node]) {
                 cout << node << " " << child << endl;//bridges node -it
             }

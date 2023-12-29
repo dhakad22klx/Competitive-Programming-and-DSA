@@ -1,11 +1,11 @@
 Github Token 
-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
+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
 
 
 #Configuration commands
 git config --global user.name "username"
 git config --global user.email "useremail"
-git config --list // to see config
+git config --list // to see configF
 gedit .gitconfig // to edit configuration 
 
 

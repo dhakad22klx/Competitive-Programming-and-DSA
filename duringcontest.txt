@@ -11,8 +11,9 @@
    small parts. They will cling together to give final optimal answer.
 6. If question looks unsolvable from front, try going from back. Works mostly from the back.
 7. Stuck on implmentation? Think and then implement Data Structures that best fit the q like stacks,queue.
-*/
----Problem 1717 C - it is always solvable to B and C ,dont give up by initial time fear.Try take time dont care about positive negative rating changes
+   
+   Problem 1717 C - it is always solvable to B and C ,dont give up by initial time fear.Try take time dont care about positive negative rating changes
+   
 8. If something bound is given like maximum 10 different character.Bitmastking should strike for some time.
 9. if binary string is talking about or something 1-0 then bit manipulation should strike to the mind for sometime.
 10. For patter/constructive questions don't go for arbitrary cases.Try to generalize expression or the problem.
@@ -32,3 +33,6 @@
 24. Think of reverese way to solve   : https://leetcode.com/problems/burst-balloons/description/
 24. Think of reversing the process : https://codeforces.com/contest/1672/problem/D
 25. Every time thinking of breaking problems into subproblem always think does answer exist in subproblem.
+26. Think of subproblem while solving large problems.
+27. Don't always think dp recursive sometime precomputation is only way.//https://codeforces.com/problemset/problem/811/C.
+28. When iteration a variable in loop always consider that variable sincerely after exiting the loop.

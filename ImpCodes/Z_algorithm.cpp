@@ -64,21 +64,22 @@ vector<ll> z_function(string &s)
     ll n=s.length();
     vl z(n);
     // [l...r] --> rightmost segment match
-    for (ll i = 1, l = 0, r = 0; i < n; ++i)
+    int l = 0, r = 0;
+    for(ll i = 1; i < n; ++i)
     {
-        if (i <= r)
+        if (i < r)
         {
-            z[i] = min(r - i + 1, z[i - l]);
+            z[i] = min(r - i , z[i - l]);
         }
         while (i + z[i] < n and s[i + z[i]] == s[z[i]])
         {
             z[i]++;
         }
         //Update --rightmost segment match
-        if (i + z[i] - 1 > r)
+        if (i + z[i] > r)
         {
             l = i;
-            r = i + z[i] - 1;
+            r = i + z[i];
         }
     }
     return z;

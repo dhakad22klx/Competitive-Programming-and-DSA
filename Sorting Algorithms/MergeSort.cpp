@@ -33,7 +33,7 @@ void merge(int arr[], int low, int mid, int high)
       
     for (int j = 0; j < n2; j++)
     {
-        M[j] = arr[mid+ 1 + j];
+        M[j] = arr[mid + 1 + j];
     }
 
     // Maintain current index of sub-arrays and main array

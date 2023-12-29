@@ -42,7 +42,9 @@ void insertionSort(int array[], int size)
     // Compare key with each element on the left of it until an element smaller than
     // it is found.
     // For descending order, change key<array[j] to key>array[j].
-    while (key < array[j] && j >= 0) {
+    
+    while (key < array[j] && j >= 0) 
+    {
       array[j + 1] = array[j];
       --j;
     }

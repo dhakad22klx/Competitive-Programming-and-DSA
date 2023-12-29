@@ -7,10 +7,14 @@ stack , queue;
 
 
 //Graph
- Graph, graph +dp, 
+ Graph, graph +dp, 0-1 BFS,
  
  
  
  //Number Theory 
  
  Seive trick , Fermat Theoram ,Euler totient 
+ 
+ 
+ 
+ //Queries  : offline or online queries.

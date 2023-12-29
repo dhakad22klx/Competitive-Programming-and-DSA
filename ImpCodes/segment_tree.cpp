@@ -118,7 +118,7 @@ void solve()
     // if we update ie. replace value at kth index by 'x'
     //add(k,x-v[k],tree);v[k]=x;//important is making v[k]=x;
     prt(tree);//0 39 22 17 13 9 9 8 5 8 6 3 2 7 2 6 
-    pr(sum(0,7,tree));//39 
+    pr(sum(0,7,tree));//39  
     pr(sum(5,7,tree));//15
     //END
 }

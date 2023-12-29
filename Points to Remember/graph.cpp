@@ -12,4 +12,4 @@
 
 3) d(u,v) is the diameter.
 
-7. 
+7. Shortest cycle can be found like delete an edges [u,v] then find shortest distance of v from u if exist then cycle exist with lenght = dis[v] + 1;
