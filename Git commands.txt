@@ -1,5 +1,5 @@
 Github Token 
-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
+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
 
 
 #Configuration commands
@@ -14,8 +14,22 @@ gedit .gitconfig // to edit configuration
 Run the following commands
     git pull --rebase origin master 
     git push origin master 
-    
-    
+
+
+
+//setting up new repo 
+
+git init
+
+git add README.md //optional
+
+git commit -m "..."
+
+git remote add origin <repo link>
+
+git push -u origin master 
+
+
     
     
     

@@ -11,3 +11,6 @@
    2). https://www.hackerearth.com/practice/algorithms/dynamic-programming/bit-masking/practice-problems/algorithm/compatibility-queries-0c068f8f/
    
 9. When something is about min operation to change x from a to b or min distance .BFS should strike. //1633 D codeforces
+
+10. When we are in situation like dealing with left and right subarry for each index then thinking of creating an array of (2*n) should come in mind 
+  ///https://codeforces.com/contest/1907/problem/Fs

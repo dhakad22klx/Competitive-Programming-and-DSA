@@ -36,3 +36,5 @@
 26. Think of subproblem while solving large problems.
 27. Don't always think dp recursive sometime precomputation is only way.//https://codeforces.com/problemset/problem/811/C.
 28. When iteration a variable in loop always consider that variable sincerely after exiting the loop.
+29. When we are in situation like dealing with left and right subarry for each index then thinking of creating an array of (2*n) should come in mind 
+  ///https://codeforces.com/contest/1907/problem/F
