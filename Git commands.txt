@@ -29,8 +29,16 @@ git remote add origin <repo link>
 
 git push -u origin master 
 
+//some other
 
-    
+git checkout -b <branch name >  // i think creates
+git checkout <branchname> // switches 
+git pull origin <branch0-name> //to pull changes 
+
+
+//Adding through VsCode is also possible --
+  -> can read tutorials
+  -> ctrl+shift+p then search for git add remote    
     
     
     
