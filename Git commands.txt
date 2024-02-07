@@ -27,6 +27,8 @@ git commit -m "..."
 
 git remote add origin <repo link>
 
+rm -rf .git  //to undo git init 
+
 git push -u origin master 
 
 //some other
