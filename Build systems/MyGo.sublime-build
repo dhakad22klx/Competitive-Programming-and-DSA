@@ -1,0 +1,11 @@
+{
+    "shell_cmd": "go run $file < input.txt > output.txt",
+    "working_dir": "${file_path}",
+    "selector": "source.go",
+    "variants": [
+        {
+            "name": "Run",
+            "shell_cmd": "go run $file < input.txt > output.txt"
+        }
+    ]
+}

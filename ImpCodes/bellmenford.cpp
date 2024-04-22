@@ -42,6 +42,7 @@ class Solution {
         return dis;
     }
 };
+
 2. Solution
 #include<bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp> // Common file
@@ -139,13 +140,15 @@ void solve()
     so  To get the vertices that are guaranteed to lie in a negative cycle,
     starting from the vertex pass through to the predecessors n times*/
     ll y = cycle_start;
+    
     for (ll i=0;i<n;i++)
     {
         y=par[y];
     }
     vector<ll> path;
     // prt(par);
-    for (ll cur = y;; cur = par[cur]) {
+    for (ll cur = y;; cur = par[cur]) 
+    {
         path.push_back(cur);
         // dbg(cur);
         // dbg(par[cur]);

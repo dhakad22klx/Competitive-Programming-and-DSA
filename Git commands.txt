@@ -1,5 +1,5 @@
 Github Token 
-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
+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
 
 
 #Configuration commands
@@ -31,11 +31,32 @@ rm -rf .git  //to undo git init
 
 git push -u origin master 
 
+git push origin master --force ///sometime if there is issue 
+
 //some other
 
 git checkout -b <branch name >  // i think creates
 git checkout <branchname> // switches 
 git pull origin <branch0-name> //to pull changes 
+
+
+//Recommended by github
+
+==> create a new repository on the command line
+
+echo "# Nymble-s-Software-Design-Task" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/dhakad22klx/Nymble-s-Software-Design-Task.git
+git push -u origin main
+
+==> or push an existing repository from the command line
+
+git remote add origin https://github.com/dhakad22klx/Nymble-s-Software-Design-Task.git
+git branch -M main
+git push -u origin main
 
 
 //Adding through VsCode is also possible --
