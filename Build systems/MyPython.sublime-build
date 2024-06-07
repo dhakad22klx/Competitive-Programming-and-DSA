@@ -1,0 +1,12 @@
+{
+    "cmd": ["python3", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python",
+    "env": {"PYTHONIOENCODING": "utf-8"},
+    "variants": [
+        {
+            "name": "Run with Input/Output",
+            "cmd": ["sh", "-c", "python3 -u \"$file\" < input.txt > output.txt"]
+        }
+    ]
+}

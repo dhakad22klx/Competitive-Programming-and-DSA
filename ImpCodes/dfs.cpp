@@ -21,6 +21,7 @@ void dfs(ll vertex){
     * after entering the vertex
     */
     vis[vertex]=true;
+    
     cout<<vertex<<endl;
     for(ll child : graph[vertex]){
         cout<<"Parent "<<vertex<<" Child "<<child<<endl;
