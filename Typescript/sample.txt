@@ -1,0 +1,5 @@
+1. n a directed tree, find the maximum length of cycle you make if you are allowed to add 1 extra directed edge. Round trip
+
+2. Alice, Bob, Rabbit playing game on tree.
+
+3. Number of subsequences such that multiplication of elements is divisible by a or b two prime numbers.

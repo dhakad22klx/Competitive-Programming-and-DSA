@@ -3,6 +3,7 @@ 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
 
 
 #Configuration commands
+
 git config --global user.name "username"
 git config --global user.email "useremail"
 git config --list // to see configF
@@ -10,6 +11,7 @@ gedit .gitconfig // to edit configuration
 
 
 ##Error 
+
 -->git error: failed to push some refs to remote
 Run the following commands
     git pull --rebase origin master 
@@ -66,7 +68,7 @@ git push -u origin main
     
     
    
- ---------//git commands//----------
+---------//git commands//----------
  
 git clone <repository url> // to clone corresponding repository 
 touch <filename_with_extension> // to make corresponding blank file under particular directory 
@@ -109,5 +111,11 @@ git branch -d <branchname>  // to delete branch from master if it has been alrea
 git push -d <branchname>  // to delete branch from remote ie github 
 
 git remote set-url <remote_name> <remote_url> // to change the origin url
+
+
+
+#Harkirat Course 
+
+
 
 

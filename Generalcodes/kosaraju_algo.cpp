@@ -1,6 +1,6 @@
 COdeforce ---> 427 C
 
-//order from dfs1 basically reversed  topological sort sorted   (actually this is exactly what vertices' sort by exit time means ;
+//order from dfs1 basically reversed  topological sort sorted   (actually this is exactly what vertices sort by exit time means ;
 
 //उम्मिद तो नहीं है लेकिन देखते हैं
 #include<bits/stdc++.h>

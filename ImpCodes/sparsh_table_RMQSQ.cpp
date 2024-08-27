@@ -84,6 +84,7 @@ void solve()
         cin>>L>>R;
         query(L,R);
     }
+    
     //END
 }
 int main(){

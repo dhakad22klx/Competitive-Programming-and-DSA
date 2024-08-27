@@ -1,5 +1,5 @@
 Problem 1 : https://codeforces.com/contest/161/problem/D //refrence Kartik arora youtube 
-Proble  2 : more advance version of Problem 1 here wight also plays role.
+Proble  2 : more advance version of Problem 1 here weight also plays role.
 //can read akhil commented  solution for understand 
 
 /////////////////////////|| जय भोलेनाथ ||//////////////////////
@@ -192,6 +192,7 @@ ll n,m,k,a,b,c,q,x,y,l,r,ans,ans1,ans2,mx,mn,sum;
 /////////////////////////////////////////////|| हर हर महादेव ||/////////////////////////////////////
 
 vector<vector<ll>> sub,fr,fr2,sub2;
+
 //fr-frequency of particular edges to be considered and sub --total wight considering frequency 
 //sub,fr ---subtree
 //sub2,fr2 --- overall 
@@ -213,6 +214,8 @@ void dfs(ll v,ll par, vector<vpl> &g)
         }
     }
 }
+
+
 void  get(ll v,ll par,ll wt,vector<vpl> &g, ll up)
 {
     ll cur = up + sub[v][1] + 2*sub[v][2];
