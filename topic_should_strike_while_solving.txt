@@ -18,3 +18,5 @@ stack , queue;
  
  
  //Queries  : offline or online queries.
+
+//Monotonic queue : when dealing with maximum and minimum element of each subarray of size K
