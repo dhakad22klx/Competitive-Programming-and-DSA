@@ -1,0 +1,29 @@
+// {
+//     "cmd": ["go", "run", "$file"],
+//     "working_dir": "$file_path",
+//     "shell": true,
+//     "file_regex": "^(.*):([0-9]+):([0-9]+): error: (.*)$",
+//     "env": {
+//         "GOOS": "linux",
+//         "GOARCH": "amd64"
+//     },
+//     "variants": [
+//         {
+//             "name": "Run with Input/Output Files",
+//             "cmd": ["bash", "-c", "go run $file < input.txt > output.txt"]
+//         }
+//     ]
+// }
+{
+    "cmd": ["sh", "-c", "go run $file < input.txt > output.txt"],
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "$file_path",
+    "selector": "source.go",
+    "variants": [
+        {
+            "name": "Build",
+            "cmd": ["go", "build", "-v", "$file"]
+        }
+    ]
+}
+
