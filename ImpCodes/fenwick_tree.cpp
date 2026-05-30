@@ -1,6 +1,9 @@
 Question : 1. https://cses.fi/problemset/task/1646
            2. https://codeforces.com/problemset/problem/102/D
-           
+
+
+A Fenwick Tree answers prefix sum queries and point updates in O(log n) time. 
+The magic lies in how it uses the lowest set bit (LSB) of an index to decide what range each node stores.
 //Cp algorithm for tutorials 
 A fenwick tree can support 
 1. Point Update and Range Query
