@@ -1,4 +1,4 @@
-Question - https://www.codechef.com/problems/REVERSE?tab=statement
+// Question - https://www.codechef.com/problems/REVERSE?tab=statement
 
 //typing 
 #include<bits/stdc++.h>
